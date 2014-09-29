@@ -1,7 +1,10 @@
 steps to manipulate polarimetry csv file into something readable
 
-1. copy csv data from http://www.phy.bnl.gov/cnipol/ --> fill results --> 
+1. copy csv data from polarimetry group
+  - old method: http://www.phy.bnl.gov/cnipol/ --> fill results --> 
    table format = csv, save to "polarimetry.csv"
+  - new (more correct method): https://wiki.bnl.gov/rhicspin/Results --> Run 12 fill by fill results
+   (for run 12 data table... run13 data table not finalised, still using old method)
 
 2. remove "+-" symbols: cat polarimetry.csv | sed 's/+-//g' > polarimetry.dat
 
